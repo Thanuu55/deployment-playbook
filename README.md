@@ -281,3 +281,7 @@ ansible-jenkins-project
 
 **DevOps Automation Project**
 Jenkins + Ansible CI/CD Pipeline
+<img width="1920" height="1080" alt="Screenshot (91)" src="https://github.com/user-attachments/assets/5b04a134-5b35-427c-af02-937d4ad56a14" />
+<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/2ec5c3e1-af57-488d-8145-b013867c76f6" />
+
+
