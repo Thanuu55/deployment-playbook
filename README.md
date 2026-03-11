@@ -1,6 +1,6 @@
-# 🚀 Jenkins Pipeline Triggering Ansible Playbook using Ansible Master–Worker Architecture
+#  Jenkins Pipeline Triggering Ansible Playbook using Ansible Master–Worker Architecture
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates how to configure **Jenkins and Ansible in a Master–Worker architecture**.
 Jenkins runs on the **master node**, and Ansible manages the **worker node** through SSH.
@@ -9,7 +9,7 @@ The Jenkins pipeline will later trigger an **Ansible Playbook** to automate conf
 
 ---
 
-# 🏗 Architecture
+#  Architecture
 
 ```
 GitHub Repository
@@ -28,7 +28,7 @@ GitHub Repository
 
 ---
 
-# 🖥 System Requirements
+#  System Requirements
 
 | Component     | Requirement     |
 | ------------- | --------------- |
@@ -41,7 +41,7 @@ GitHub Repository
 
 ---
 
-# ⚙️ Step 1: Launch EC2 Instances
+# Step 1: Launch EC2 Instances
 
 Create **2 servers**
 
@@ -56,7 +56,7 @@ Create **2 servers**
 
 ---
 
-# 🔧 Step 2: Install Ansible on Master Node
+#  Step 2: Install Ansible on Master Node
 
 Update packages
 
@@ -84,7 +84,7 @@ ansible --version
 
 ---
 
-# 👤 Step 3: Create Ansible User
+#  Step 3: Create Ansible User
 
 ```bash
 sudo adduser ansible
@@ -99,7 +99,7 @@ su - ansible
 
 ---
 
-# 🔑 Step 4: Generate SSH Key
+#  Step 4: Generate SSH Key
 
 Generate SSH key from **Master Node**
 
@@ -117,7 +117,7 @@ Public key location
 
 ---
 
-# 🖥 Step 5: Configure Worker Node
+#  Step 5: Configure Worker Node
 
 Login to **Worker Node**
 
@@ -147,7 +147,7 @@ sudo systemctl restart ssh
 
 ---
 
-# 🔗 Step 6: Test SSH Connection
+#  Step 6: Test SSH Connection
 
 From master node
 
@@ -157,7 +157,7 @@ ssh ansible@<worker-private-ip>
 
 ---
 
-# 📂 Step 7: Configure Ansible Inventory
+#  Step 7: Configure Ansible Inventory
 
 Edit hosts file
 
@@ -186,7 +186,7 @@ SUCCESS => pong
 
 ---
 
-# ⚙️ Step 8: Install Jenkins on Master Node
+# Step 8: Install Jenkins on Master Node
 
 Add Jenkins key
 
@@ -224,7 +224,7 @@ sudo systemctl enable jenkins
 
 ---
 
-# 🌐 Step 9: Access Jenkins
+#  Step 9: Access Jenkins
 
 Open browser
 
@@ -242,7 +242,7 @@ Install **Suggested Plugins** and create **Admin User**.
 
 ---
 
-# 🔓 Step 10: Give Jenkins Sudo Access
+#  Step 10: Give Jenkins Sudo Access
 
 ```bash
 sudo visudo
@@ -256,7 +256,7 @@ jenkins ALL=(ALL) NOPASSWD:ALL
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```
 ansible-jenkins-project
@@ -267,7 +267,7 @@ ansible-jenkins-project
 
 ---
 
-# 🛠 Tools Used
+#  Tools Used
 
 * Jenkins
 * Ansible
@@ -277,7 +277,7 @@ ansible-jenkins-project
 
 ---
 
-# 👩‍💻 Author
+#  Author
 
 **DevOps Automation Project**
 Jenkins + Ansible CI/CD Pipeline
